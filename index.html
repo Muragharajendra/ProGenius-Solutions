@@ -1,0 +1,592 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="ProGenius - Building modern, premium digital platforms, AI solutions, and intelligent business automation systems that drive sustainable growth." />
+    <title>ProGenius | Building the Next Generation of Digital Growth</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;600;700;800;900&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Premium Preloader -->
+    <div id="preloader" class="preloader">
+      <div class="preloader-content">
+        <div class="preloader-logo">
+          <span class="letter">P</span>
+          <span class="letter">R</span>
+          <span class="letter">O</span>
+          <span class="letter">G</span>
+          <span class="letter">E</span>
+          <span class="letter">N</span>
+          <span class="letter">I</span>
+          <span class="letter">U</span>
+          <span class="letter">S</span>
+        </div>
+        <div class="progress-bar-container">
+          <div class="progress-bar" id="preloader-progress"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Background Elements -->
+    <div class="bg-noise"></div>
+    <div class="bg-gradients-container">
+      <div class="mesh-gradient mesh-1"></div>
+      <div class="mesh-gradient mesh-2"></div>
+      <div class="mesh-gradient mesh-3"></div>
+    </div>
+    <canvas id="particle-canvas" class="particle-canvas"></canvas>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="main-navbar">
+      <div class="nav-container">
+        <a href="#" class="nav-logo" id="nav-logo-btn">PROGENIUS.</a>
+        <div class="nav-links">
+          <a href="#about" class="nav-link">About</a>
+          <a href="#services" class="nav-link">Services</a>
+          <a href="#why-choose-us" class="nav-link">Why Us</a>
+          <a href="#projects" class="nav-link">Featured</a>
+        </div>
+        <div class="nav-actions">
+          <a href="#cta" class="nav-btn-magnetic"><button class="btn btn-primary btn-nav magnetic-btn" id="nav-cta-btn">Start a Project</button></a>
+        </div>
+        <button class="mobile-menu-toggle" aria-label="Toggle Menu" id="mobile-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+      <!-- Mobile Nav Overlay -->
+      <div class="mobile-nav" id="mobile-nav-menu">
+        <div class="mobile-nav-links">
+          <a href="#about" class="mobile-nav-link">About</a>
+          <a href="#services" class="mobile-nav-link">Services</a>
+          <a href="#why-choose-us" class="mobile-nav-link">Why Us</a>
+          <a href="#projects" class="mobile-nav-link">Featured</a>
+          <a href="#cta" class="mobile-nav-link btn-mobile-cta">Start a Project</a>
+        </div>
+      </div>
+    </nav>
+
+    <div id="smooth-wrapper">
+      <div id="smooth-content">
+        <!-- Hero Section -->
+        <header class="hero" id="hero-section">
+          <div class="container hero-container">
+            <div class="hero-parallax-wrapper">
+              <div class="parallax-circle circle-1"></div>
+              <div class="parallax-circle circle-2"></div>
+            </div>
+            
+            <div class="hero-content">
+              <div class="hero-tagline-container">
+                <span class="hero-tagline">Web Platforms &bull; AI Solutions &bull; Business Automation</span>
+              </div>
+              
+              <h1 class="hero-title" id="hero-title-header">
+                <span class="hero-line line-1">BUILDING THE NEXT</span>
+                <span class="hero-line line-2" id="char-reveal-line">GENERATION OF</span>
+                <span class="hero-line line-3">DIGITAL GROWTH</span>
+              </h1>
+              
+              <p class="hero-description fade-up-init">
+                We help businesses, educational institutions, and startups build scalable digital products that streamline operations, attract customers, and accelerate growth.
+              </p>
+              
+              <div class="hero-actions fade-up-init">
+                <a href="#cta" class="magnetic-wrap"><button class="btn btn-primary magnetic-btn" id="hero-primary-btn">Start a Project</button></a>
+                <a href="#projects" class="magnetic-wrap"><button class="btn btn-secondary magnetic-btn" id="hero-secondary-btn">View Our Work</button></a>
+              </div>
+            </div>
+          </div>
+          <div class="hero-scroll-indicator">
+            <span class="scroll-text">Scroll to explore</span>
+            <div class="scroll-arrow"></div>
+          </div>
+        </header>
+
+        <!-- About Us Section -->
+        <section class="about" id="about">
+          <div class="container">
+            <div class="section-grid">
+              <div class="section-info reveal-fade">
+                <span class="section-tag">ABOUT US</span>
+                <h2 class="section-title">Turning Ideas Into Scalable Digital Solutions</h2>
+              </div>
+              <div class="section-body reveal-fade">
+                <p class="lead-text">
+                  At ProGenius, we combine technology, design, and automation to create powerful digital experiences that solve real-world business challenges.
+                </p>
+                <p class="body-text">
+                  From custom websites and AI-powered applications to educational platforms and business automation systems, we build solutions that deliver measurable results.
+                </p>
+                <div class="about-focus-list">
+                  <span class="focus-title">Our focus is simple:</span>
+                  <ul class="focus-items">
+                    <li>
+                      <span class="focus-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                      </span>
+                      Build smarter systems.
+                    </li>
+                    <li>
+                      <span class="focus-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                      </span>
+                      Automate repetitive work.
+                    </li>
+                    <li>
+                      <span class="focus-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                      </span>
+                      Create better customer experiences.
+                    </li>
+                    <li>
+                      <span class="focus-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                      </span>
+                      Drive sustainable business growth.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services" id="services">
+          <div class="container">
+            <div class="section-header text-center reveal-fade">
+              <span class="section-tag">SERVICES</span>
+              <h2 class="section-title">What We Build</h2>
+              <p class="section-subtitle">We design and develop tailor-made digital systems optimized for efficiency, user experience, and revenue generation.</p>
+            </div>
+            
+            <div class="services-grid">
+              <!-- Service Card 1 -->
+              <div class="service-card reveal-fade" id="service-card-web">
+                <div class="card-glow"></div>
+                <div class="service-icon">
+                  <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                    <line x1="8" y1="21" x2="16" y2="21"></line>
+                    <line x1="12" y1="17" x2="12" y2="21"></line>
+                  </svg>
+                </div>
+                <h3 class="service-card-title">Custom Web Development</h3>
+                <p class="service-card-desc">Modern, responsive, and high-performance websites designed to elevate your brand and convert visitors into customers.</p>
+                <ul class="service-bullets">
+                  <li>Business Websites</li>
+                  <li>Corporate Portals</li>
+                  <li>Booking Platforms</li>
+                  <li>Customer Dashboards</li>
+                  <li>SaaS Applications</li>
+                  <li>E-Commerce Solutions</li>
+                </ul>
+              </div>
+
+              <!-- Service Card 2 -->
+              <div class="service-card reveal-fade" id="service-card-ai">
+                <div class="card-glow"></div>
+                <div class="service-icon">
+                  <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 2a10 10 0 0 1 10 10c0 5.523-4.477 10-10 10S2 17.523 2 12A10 10 0 0 1 12 2z"></path>
+                    <path d="M12 6v12M6 12h12"></path>
+                    <circle cx="12" cy="12" r="3" fill="currentColor"></circle>
+                  </svg>
+                </div>
+                <h3 class="service-card-title">AI-Powered Solutions</h3>
+                <p class="service-card-desc">Transform the way your business operates with intelligent automation and AI-driven decision making.</p>
+                <ul class="service-bullets">
+                  <li>AI Chatbots</li>
+                  <li>RAG Knowledge Assistants</li>
+                  <li>Document Intelligence</li>
+                  <li>Process Automation</li>
+                  <li>AI Analytics</li>
+                  <li>Recommendation Systems</li>
+                </ul>
+              </div>
+
+              <!-- Service Card 3 -->
+              <div class="service-card reveal-fade" id="service-card-tuition">
+                <div class="card-glow"></div>
+                <div class="service-icon">
+                  <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                    <path d="M2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                  </svg>
+                </div>
+                <h3 class="service-card-title">Tuition Management Platforms</h3>
+                <p class="service-card-desc">A complete digital ecosystem for academies, coaching institutes, and educational organizations to scale efficiently.</p>
+                <ul class="service-bullets">
+                  <li>Student Admissions</li>
+                  <li>Attendance Tracking</li>
+                  <li>Parent & Student Portal</li>
+                  <li>Fee Billing & Invoicing</li>
+                  <li>Online Learning Resources</li>
+                  <li>Advanced Analytics & Reports</li>
+                </ul>
+              </div>
+
+              <!-- Service Card 4 -->
+              <div class="service-card reveal-fade" id="service-card-academy">
+                <div class="card-glow"></div>
+                <div class="service-icon">
+                  <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="9" cy="7" r="4"></circle>
+                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                  </svg>
+                </div>
+                <h3 class="service-card-title">Personalized Academy Websites</h3>
+                <p class="service-card-desc">More than a website. A complete student acquisition platform to generate inquiries and build long-term credibility.</p>
+                <ul class="service-bullets">
+                  <li>Course Catalog & Showcase</li>
+                  <li>Faculty Profiles & Portfolios</li>
+                  <li>Student Success Stories</li>
+                  <li>Online Admissions Forms</li>
+                  <li>WhatsApp & Chat Integration</li>
+                  <li>Mobile Optimized Experience</li>
+                </ul>
+              </div>
+
+              <!-- Service Card 5 -->
+              <div class="service-card reveal-fade" id="service-card-automation">
+                <div class="card-glow"></div>
+                <div class="service-icon">
+                  <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                  </svg>
+                </div>
+                <h3 class="service-card-title">Business Automation Solutions</h3>
+                <p class="service-card-desc">Reduce manual work, eliminate human errors, and streamline operations through custom tailored workflows.</p>
+                <ul class="service-bullets">
+                  <li>CRM Platforms</li>
+                  <li>Lead Management Systems</li>
+                  <li>Internal Portals</li>
+                  <li>Workflow Automation</li>
+                  <li>Reporting Dashboards</li>
+                  <li>Operations Management Tools</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Why Choose ProGenius Section -->
+        <section class="why-choose-us" id="why-choose-us">
+          <div class="container">
+            <div class="section-grid">
+              <div class="section-info reveal-fade">
+                <span class="section-tag">WHY PROGENIUS</span>
+                <h2 class="section-title">Built Around Business Outcomes</h2>
+                <p class="lead-text-small">We don't just create websites. We build systems that improve efficiency, automate processes, generate leads, and support long-term business growth.</p>
+              </div>
+              <div class="why-features reveal-fade">
+                <div class="why-feature-item">
+                  <div class="why-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" /><path d="M8 21h8M12 17v4" /></svg>
+                  </div>
+                  <div class="why-text">
+                    <h4>Modern Technology</h4>
+                    <p>Built using modern frameworks and scalable architecture designed for performance, security, and future expansion.</p>
+                  </div>
+                </div>
+
+                <div class="why-feature-item">
+                  <div class="why-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" /><path d="M12 6V12L16 14" /></svg>
+                  </div>
+                  <div class="why-text">
+                    <h4>Custom Solutions</h4>
+                    <p>Every project is designed around your business goals, workflows, and customer needs. No templates, no shortcuts.</p>
+                  </div>
+                </div>
+
+                <div class="why-feature-item">
+                  <div class="why-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" /><path d="M22 4L12 14.01l-3-3" /></svg>
+                  </div>
+                  <div class="why-text">
+                    <h4>End-to-End Delivery</h4>
+                    <p>From strategy and design to development, deployment, and support, we handle the complete product lifecycle.</p>
+                  </div>
+                </div>
+
+                <div class="why-feature-item">
+                  <div class="why-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" /><circle cx="9" cy="7" r="4" /><path d="M23 21v-2a4 4 0 0 0-3-3.87" /><path d="M16 3.13a4 4 0 0 1 0 7.75" /></svg>
+                  </div>
+                  <div class="why-text">
+                    <h4>Long-Term Partnership</h4>
+                    <p>We grow alongside our clients through continuous support, routine optimization, and progressive innovation.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Project Showcase Section (Horizontal Scroll) -->
+        <section class="projects" id="projects">
+          <div class="projects-sticky-header">
+            <div class="container project-header-container reveal-fade">
+              <div>
+                <span class="section-tag">PORTFOLIO</span>
+                <h2 class="section-title">Featured Solutions</h2>
+              </div>
+              <p class="section-subtitle-horizontal">Explore our latest work showing how we translate complex business goals into high-impact digital systems. Scroll down to browse horizontally.</p>
+            </div>
+          </div>
+          
+          <div class="projects-container" id="projects-container">
+            <div class="projects-track" id="projects-track">
+              
+              <!-- Project 1 -->
+              <div class="project-card-wrapper">
+                <div class="project-card" data-project="tuition">
+                  <div class="project-image-container">
+                    <img src="/assets/tuition_platform_mockup.png" alt="Smart Tuition Management Platform" class="project-img" onerror="this.src='https://placehold.co/800x600/1e1e24/6d28ff?text=Tuition+Management+Platform'" />
+                    <div class="project-overlay">
+                      <span class="overlay-tag">Case Study</span>
+                      <span class="overlay-action">View Project</span>
+                    </div>
+                  </div>
+                  <div class="project-info-block">
+                    <span class="project-category">Education & SaaS</span>
+                    <h3 class="project-title-card">Smart Tuition Management Platform</h3>
+                    <p class="project-desc-card">Centralize admissions, attendance, communication, fee management, student performance, and learning resources in a single platform.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Project 2 -->
+              <div class="project-card-wrapper">
+                <div class="project-card" data-project="ai">
+                  <div class="project-image-container">
+                    <img src="/assets/ai_assistant_mockup.png" alt="AI Teaching Assistant" class="project-img" onerror="this.src='https://placehold.co/800x600/1e1e24/8b5cf6?text=AI+Teaching+Assistant'" />
+                    <div class="project-overlay">
+                      <span class="overlay-tag">Case Study</span>
+                      <span class="overlay-action">View Project</span>
+                    </div>
+                  </div>
+                  <div class="project-info-block">
+                    <span class="project-category">Artificial Intelligence</span>
+                    <h3 class="project-title-card">AI Teaching Assistant</h3>
+                    <p class="project-desc-card">An intelligent educational assistant that provides instant answers, learning support, and personalized academic guidance.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Project 3 -->
+              <div class="project-card-wrapper">
+                <div class="project-card" data-project="analytics">
+                  <div class="project-image-container">
+                    <img src="/assets/analytics_dashboard_mockup.png" alt="Business Analytics Dashboard" class="project-img" onerror="this.src='https://placehold.co/800x600/1e1e24/6d28ff?text=Business+Analytics'" />
+                    <div class="project-overlay">
+                      <span class="overlay-tag">Case Study</span>
+                      <span class="overlay-action">View Project</span>
+                    </div>
+                  </div>
+                  <div class="project-info-block">
+                    <span class="project-category">Business Intelligence</span>
+                    <h3 class="project-title-card">Business Analytics Dashboard</h3>
+                    <p class="project-desc-card">Transform complex business data into clear insights through interactive reporting and real-time performance tracking.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Project 4 -->
+              <div class="project-card-wrapper">
+                <div class="project-card" data-project="portal">
+                  <div class="project-image-container">
+                    <img src="/assets/business_portal_mockup.png" alt="Custom Business Portals" class="project-img" onerror="this.src='https://placehold.co/800x600/1e1e24/8b5cf6?text=Business+Portal'" />
+                    <div class="project-overlay">
+                      <span class="overlay-tag">Case Study</span>
+                      <span class="overlay-action">View Project</span>
+                    </div>
+                  </div>
+                  <div class="project-info-block">
+                    <span class="project-category">Workflow & Internal Tools</span>
+                    <h3 class="project-title-card">Custom Business Portals</h3>
+                    <p class="project-desc-card">Secure digital platforms that streamline customer management, team collaboration, and business operations.</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+        <!-- Our Mission Section -->
+        <section class="mission" id="mission-section">
+          <div class="container text-center reveal-fade">
+            <span class="section-tag">OUR MISSION</span>
+            <blockquote class="mission-quote">
+              "To empower businesses, educational institutions, and startups with modern technology solutions that improve efficiency, unlock growth opportunities, and create exceptional digital experiences."
+            </blockquote>
+          </div>
+        </section>
+
+        <!-- Call to Action (CTA) Section -->
+        <section class="cta" id="cta">
+          <div class="cta-glow-container">
+            <div class="cta-glow glow-1"></div>
+            <div class="cta-glow glow-2"></div>
+            <div class="cta-light-ray"></div>
+          </div>
+          <div class="container cta-grid-container">
+            <div class="cta-info-side reveal-fade">
+              <span class="section-tag-light">START YOUR PROJECT</span>
+              <h2 class="cta-headline">Let's Build Something Exceptional</h2>
+              <p class="cta-paragraph">
+                Tell us about your project and we'll get back to you within 24 hours.
+              </p>
+              <div class="cta-info-details">
+                <div class="info-detail-item">
+                  <div class="info-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                  </div>
+                  <span>progenisolutions@gmail.com</span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="cta-form-side reveal-fade">
+              <div class="glass-form-card">
+                <form class="inquiry-form">
+                  
+                  <div class="form-group">
+                    <label for="full-name" class="form-label">Full Name</label>
+                    <span class="form-sublabel">What should we call you?</span>
+                    <input type="text" id="full-name" name="name" class="form-input" placeholder="e.g. John Doe" required>
+                  </div>
+
+                  <div class="form-row">
+                    <div class="form-group">
+                      <label for="email-address" class="form-label">Email Address</label>
+                      <span class="form-sublabel">Where can we reach you?</span>
+                      <input type="email" id="email-address" name="email" class="form-input" placeholder="e.g. john@example.com" required>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="mobile-number" class="form-label">Mobile Number</label>
+                      <span class="form-sublabel">How can we contact you directly?</span>
+                      <input type="tel" id="mobile-number" name="phone" class="form-input" placeholder="e.g. +1 234 567 890" required>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="project-type" class="form-label">Project Type</label>
+                    <span class="form-sublabel">Select what fits your needs</span>
+                    <div class="select-wrapper">
+                      <select id="project-type" name="project_type" class="form-select" required>
+                        <option value="" disabled selected>Select an option...</option>
+                        <option value="Website">Website</option>
+                        <option value="AI Solution">AI Solution</option>
+                        <option value="Automation">Automation</option>
+                        <option value="Education Platform">Education Platform</option>
+                        <option value="Other">Other</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="message" class="form-label">Your Message</label>
+                    <span class="form-sublabel">Tell us about your project, goals, and vision.</span>
+                    <textarea id="message" name="message" class="form-textarea" placeholder="Describe your project ideas..." rows="4" required></textarea>
+                  </div>
+
+                  <div class="form-submit-container">
+                    <button type="submit" class="btn btn-primary btn-large btn-block" id="form-submit-btn">
+                      <span>Send Inquiry</span>
+                      <svg class="arrow-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                      </svg>
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+          <div class="footer-particle-canvas-container">
+            <canvas id="footer-particle-canvas" class="footer-particle-canvas"></canvas>
+          </div>
+          <div class="container footer-container">
+            <div class="footer-grid">
+              <div class="footer-brand">
+                <h3 class="footer-logo">PROGENIUS.</h3>
+                <p class="footer-tagline">Building the next generation of digital growth.</p>
+              </div>
+              <div class="footer-info">
+                <div class="info-item">
+                  <span class="info-label">Email</span>
+                  <a href="mailto:progenisolutions@gmail.com" class="info-link">progenisolutions@gmail.com</a>
+                </div>
+                <div class="info-item">
+                  <span class="info-label">Phone</span>
+                  <a href="tel:+918867062099" class="info-link">+91 8867062099</a>
+                </div>
+                <div class="info-item">
+                  <span class="info-label">Location</span>
+                  <span class="info-text">Bengaluru, India</span>
+                </div>
+              </div>
+              <div class="footer-socials">
+                <a href="#" class="social-icon" aria-label="LinkedIn">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                    <rect x="2" y="9" width="4" height="12"></rect>
+                    <circle cx="4" cy="4" r="2"></circle>
+                  </svg>
+                </a>
+                <a href="#" class="social-icon" aria-label="GitHub">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                  </svg>
+                </a>
+                <a href="#" class="social-icon" aria-label="X (formerly Twitter)">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 4l11.733 16h4.267l-11.733 -16z"/>
+                    <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772"/>
+                  </svg>
+                </a>
+                <a href="#" class="social-icon" aria-label="Instagram">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="footer-bottom">
+              <p>&copy; 2026 ProGenius Solutions. All rights reserved.</p>
+              <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+    <!-- Main JS Bundle (Vite entry point) -->
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
