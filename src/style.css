@@ -656,9 +656,7 @@ section {
 
 .hero-line.line-2 {
   font-family: var(--font-display);
-  background: linear-gradient(90deg, var(--text-color) 30%, var(--primary-accent) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: var(--text-color);
   opacity: 0;
 }
 
