@@ -498,7 +498,7 @@ function initContactForm() {
       phone: formData.get('phone'),
       project_type: formData.get('project_type'),
       message: formData.get('message'),
-      to_email: 'progenisolutions@gmail.com' // Explicit fallback in case Template 'To Email' setting expects a parameter
+      to_email: 'support.trigfusion@gmail.com' // Explicit fallback in case Template 'To Email' setting expects a parameter
     };
 
     // Send email using EmailJS
